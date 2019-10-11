@@ -1,7 +1,7 @@
 .pad15 {
   padding: 15px;
 }
-@keyframes bloom {
+@keyframes hue-shift {
   0% {
     filter: hue-rotate(90deg);
   }
@@ -355,5 +355,5 @@ footer {
   border-radius: 10px;
 }
 .home .walk .walk-img img:hover {
-  animation: bloom ease-in-out 0.75s infinite;
+  animation: hue-shift ease-in-out 0.75s infinite;
 }
