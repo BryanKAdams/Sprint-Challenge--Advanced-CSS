@@ -1,1 +1,31 @@
 // Navigation code here
+.nav-content{
+    .flex(center, center);
+    border-bottom: 2px dashed @nav-border;
+    
+}
+.navitems{
+    .flex(space-evenly, center);
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+    margin: 15px auto 15px;
+    display: flex;
+    margin: 0 auto;
+    @media @phone{
+        flex-wrap: wrap;
+        padding: 0px; 
+        h1{
+            width: 100%;
+            text-align: center;
+        }
+        p{
+            width: 20%;
+            text-align: center;
+        }
+    }
+    h1{
+        width: 100%;
+    }
+    
+}
