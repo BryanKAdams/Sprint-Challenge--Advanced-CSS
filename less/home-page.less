@@ -87,11 +87,20 @@
 
       .btn {
         .custom-btn(@btn-bg-color, 100px, 30px, @porcelain, 5px);
+        .two{
+          display: none;
+        }
         &:active {
           position: relative;
           animation-name: take-off;
           animation-duration: 4s;
           animation-timing-function: ease-in-out;
+          .one{
+            display: none;
+          }
+          .two{
+            display: flex;
+          }
           
       }
         @media @phone{

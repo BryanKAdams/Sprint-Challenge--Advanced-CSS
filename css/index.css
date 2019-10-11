@@ -357,11 +357,20 @@ footer {
   background-color: #F6F7F8;
   color: #22283A;
 }
+.home .walk .walk-text .btn .two {
+  display: none;
+}
 .home .walk .walk-text .btn:active {
   position: relative;
   animation-name: take-off;
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
+}
+.home .walk .walk-text .btn:active .one {
+  display: none;
+}
+.home .walk .walk-text .btn:active .two {
+  display: flex;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
