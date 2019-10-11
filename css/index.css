@@ -268,7 +268,7 @@ footer {
 }
 .home .banner {
   border-radius: 5px;
-  margin-top: 13%;
+  margin-top: 8%;
 }
 @media (max-width: 500px) {
   .home .banner {
