@@ -1,6 +1,20 @@
 .pad15 {
   padding: 15px;
 }
+@keyframes bloom {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+  33% {
+    filter: hue-rotate(180deg);
+  }
+  66 {
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -339,4 +353,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-img img:hover {
+  animation: bloom ease-in-out 0.75s infinite;
 }
