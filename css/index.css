@@ -5,14 +5,23 @@
   0% {
     filter: hue-rotate(90deg);
   }
-  33% {
+  15% {
     filter: hue-rotate(180deg);
   }
-  66 {
+  30 {
     filter: hue-rotate(270deg);
   }
-  100% {
+  45% {
     filter: hue-rotate(360deg);
+  }
+  60% {
+    filter: hue-rotate(270deg);
+  }
+  75% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(90deg);
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -206,9 +215,10 @@ p {
     width: 100%;
     text-align: center;
   }
-  .navitems p {
+  .navitems a {
     width: 20%;
     text-align: center;
+    text-decoration: none;
   }
 }
 .navitems h1 {
@@ -220,6 +230,11 @@ p {
   .navitems h1 {
     font-size: 3rem;
   }
+}
+.navitems a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;
@@ -364,5 +379,5 @@ footer {
   border-radius: 10px;
 }
 .home .walk .walk-img img:hover {
-  animation: hue-shift ease-in-out 0.75s infinite;
+  animation: hue-shift ease-in-out 4s infinite;
 }
