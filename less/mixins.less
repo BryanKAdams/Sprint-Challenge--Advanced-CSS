@@ -5,3 +5,29 @@
     justify-content: @justify;
     align-items: @align;
 }
+.pad15{
+    padding: 15px;
+}
+.btncenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hovering(){
+    background-color: @txt-color;
+    color: @bg-color;
+}
+.custom-btn(@bg-color, @width, @height, @txt-color, @radius){
+    .btncenter;    
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    border-radius: @radius;
+    color:@txt-color;
+    text-align: center;
+    &:hover{
+        .hovering;
+    }
+}
