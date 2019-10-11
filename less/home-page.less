@@ -87,16 +87,23 @@
 
       .btn {
         .custom-btn(@btn-bg-color, 100px, 30px, @porcelain, 5px);
+        &:active {
+          position: relative;
+          animation-name: take-off;
+          animation-duration: 4s;
+          animation-timing-function: ease-in-out;
+          
+      }
         @media @phone{
           .custom-btn(btn-bg-color, 100%, 60px, @porcelain, 5px);
         }
       }
       
     }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
+     
       @media @phone{
         width: 100%;
         margin-left: 0%;

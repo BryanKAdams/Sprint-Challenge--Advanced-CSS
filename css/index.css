@@ -24,6 +24,20 @@
     filter: hue-rotate(90deg);
   }
 }
+@keyframes take-off {
+  0% {
+    background-color: red;
+    top: 0px;
+  }
+  50% {
+    background-color: yellow;
+    top: -200px;
+  }
+  100% {
+    background-color: red;
+    top: 0px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -342,6 +356,12 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   color: #22283A;
+}
+.home .walk .walk-text .btn:active {
+  position: relative;
+  animation-name: take-off;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
