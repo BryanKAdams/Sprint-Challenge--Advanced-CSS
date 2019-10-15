@@ -1,1 +1,63 @@
 // Mixins Here
+@phone: ~"(max-width: 500px)";
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.pad15(){
+    padding: 15px;
+}
+.btncenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hoverColorSwap(){
+    background-color: @txt-color;
+    color: @bg-color;
+}
+.custom-btn(@bg-color, @width, @height, @txt-color, @radius){
+    .btncenter;    
+    background-color: @bg-color;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀</text></svg>") 16 0,auto; /*emojicursor.app*/
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    border-radius: @radius;
+    color:@txt-color;
+    text-align: center;
+    &:hover{
+        .hoverColorSwap();
+
+    }
+}
+// Animation starts here
+  @keyframes hue-shift {
+      0% {
+        filter: hue-rotate(90deg);
+      }
+      15% {
+        filter: hue-rotate(180deg);
+      }
+      30 {
+          filter: hue-rotate(270deg);
+      }
+      45% {
+        filter: hue-rotate(360deg);
+      }
+      60% {
+        filter: hue-rotate(270deg);
+      }
+      75% {
+        filter: hue-rotate(180deg);
+      }
+      100% {
+        filter: hue-rotate(90deg);
+      }
+    }
+    @keyframes take-off {
+        0%   {background-color: red; top:0px;}
+        50%  {background-color: yellow; top:-200px;}
+        100% {background-color: red; top:0px;}
+      }
